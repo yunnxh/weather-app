@@ -48,6 +48,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     );
 }
 
+
 // If no record exists for the current date, insert the temperature into the database
 $row = $results->fetch_assoc();
 if (!$row) {
@@ -62,4 +63,5 @@ foreach ($weekdata_data as $object) {
         <p class='wind'>Temperature: {$object['temperature']}°C</p>
       </div>";
 }
+
 ?>
