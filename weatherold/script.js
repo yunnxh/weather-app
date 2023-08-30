@@ -12,7 +12,7 @@ function updateWeatherUI(data) {
 
 function getWeather(city) {
   const apiKey = 'c20925545257cec1439f5bfcf3f30ea9';
-  const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   // Check if weather data is already cached
   const cachedWeather = localStorage.getItem(city);
